@@ -1,0 +1,18 @@
+def even_case():
+    return "Even"
+
+def odd_case():
+    return "Odd"
+
+
+switch = {
+    0: even_case,  
+    1: odd_case    
+}
+
+
+n = int(input())
+
+
+result = switch[n % 2]()
+print(result)
